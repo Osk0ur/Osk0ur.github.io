@@ -16,7 +16,7 @@ function addquest(e) {
 }
 
 function sentquest(answer) {
-    let answers = JSON.parse(localStorage.getItem("answers")) || [];
+    let answers = JSON.parse(sessionStorage.getItem("answers")) || [];
     answers = [...answers,answer];
-    localStorage.setItem("answers",JSON.stringify(answers));
+    sessionStorage.setItem("answers",JSON.stringify(answers));
 }
