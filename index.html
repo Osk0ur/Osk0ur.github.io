@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <title>Questionnaire</title>
+    <link rel="shortcut icon" href="tof2.jpg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Questionnaire</h1>
+    <br>
+<section>
+    <!-- identification -->
+    <h3>Présentation</h3><br>
+    <form id="Questionnaire">
+        <label for="name">Nom </label><input type="text" id="name" name="name" placeholder="Entrez votre nom"><br>
+        <label for="firstname">Prénom </label><input type="text" id="firstname" name="firstname" placeholder="Entrez votre prénom"><br>
+        <label for="age">Age </label><input type="number" id="age" name="age" min="0" max="40" value="18">
+        <br>
+        <label for="promo">Promo </label><select name="promo" id="promo">
+            <option selected value="GB1">GB1</option>
+            <option value="GB2">GB2</option>
+        </select><br>
+        <div>
+            <!-- Questions -->
+            <h3>Questions</h3><br>
+            <label for="Q1"> Question 1 : Quel est votre légume préféré ?</label><br>
+            <input type="radio" name="Q1" id="chou">
+            <label for="chou"> Chou </label>
+            <input type="radio" name="Q1" id="concombre">
+            <label for="concombre"> Concombre </label>
+            <input type="radio" name="Q1" id="navet">
+            <label for="navet"> Navet </label>
+        </div>
+        <button type="submit">Envoyer</button>
+    </form>
+</section>
+</body>
+</html>
